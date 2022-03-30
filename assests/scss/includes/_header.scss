@@ -1,0 +1,97 @@
+  .topnav {
+    padding: .5rem;
+    overflow: hidden;
+    position: relative;
+    @include media-min-lg{
+        padding: 1.5rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        @include media-min-lg{
+            margin-top: 1rem;
+        }
+        .logo-img{
+            padding-right: .4rem;
+        }
+        p{
+            color: rgba(3, 87, 85, 1);
+        }
+    }//logo
+    #myLinks {
+        display: none;
+        text-align: center;
+        @include media-min-lg{
+            display: block;
+        }
+        .button{
+            all: unset;
+            border:2px solid rgba(255, 128, 126, 1);
+            padding: .8rem 2rem;
+            border-radius: 40px;
+            margin-top: 1rem;
+            font-size: 17px;
+            @include media-min-lg{
+                font-size: 16px;
+                margin-right: 16px;
+                color: rgba(3, 87, 85, 1);
+            }
+            @include media-min-xl{
+                font-size: 17PX;
+            }
+            
+            &:hover{
+                background-color: rgba(255, 128, 126, 1);
+                color: aliceblue;
+
+            }
+        }
+        a {
+            color: black;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 18px;
+            display: block;
+            @include media-min-lg{
+                font-size: 17px;
+                display: inline;
+                color: rgba(3, 87, 85, 1);
+            }
+            @include media-min-xl{
+                font-size: 18px;
+            }
+            &:hover{
+                color:rgba(255, 128, 126, 1) ;
+            }
+            }
+            
+            
+    }
+    a.icon {
+        color: rgba(255, 128, 126, 1);
+        display: block;
+        position: absolute;
+        padding: 20px 16px;
+        right: 0;
+        top: 0;
+        @include media-min-lg{
+            display: none;
+        }
+      }
+    .hamb-icon{
+        font-size:34px;
+    }   
+
+  }
+  
+  
+  
+  
+  
+  
+  
